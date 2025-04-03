@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
-import { runDeployment } from "../../../../../pulumi/deploy";
+import { runDeployment } from "../../../../pulumi/deploy";
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
 
-    const outputs = await runDeployment(body);
+    const outputs = await runDeployment();
 
     return NextResponse.json({ message: "Deployment succeeded", outputs });
   } catch (error: any) {
