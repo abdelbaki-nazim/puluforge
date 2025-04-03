@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import AuthProvider from "@/./../context/providers";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -12,14 +15,17 @@ export const metadata: Metadata = {
   description: "A self-service infrastructure management platform",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await getServerSession(authOptions);
   return (
     <html lang="en">
-      <body className={`${inter.variable}`}>{children}</body>
+      <body className={`${inter.variable}`}>
+      <AuthProvider session={session}>{children}</AuthProvider>
+      </body>
     </html>
   );
 }

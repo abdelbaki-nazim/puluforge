@@ -1,0 +1,107 @@
+.landingContainer {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  opacity: 0.9;
+}
+
+.heroButton {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.heroButton:hover {
+  transform: scale(1.05);
+}
+
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.featureGrid {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.featureGrid .k-grid-header {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.featureGrid .k-grid-table {
+  color: #fff;
+}
+
+.featureGrid .k-grid-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.featureGrid .k-grid-table tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transition: background 0.3s ease;
+}
+
+.actionColumn {
+  text-align: center;
+}
+
+.extraText {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.extraParagraph {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.userSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.userInfo {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
